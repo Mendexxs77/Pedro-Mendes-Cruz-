@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poseidon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div class="navbar">
+        <div>
+            <a href="#inicio" class="nav-link" onclick="showSection('inicio')">Início</a>
+            <a href="#listas" class="nav-link" onclick="showSection('listas')">Listas</a>
+            <a href="#contato" class="nav-link" onclick="showSection('contato')">Contato</a>
+        </div>
+        <div class="title">POSEIDON</div>
+        <div>
+            <a href="#produtos" class="nav-link" onclick="showSection('produtos')">Produtos</a>
+            <a href="#galeria" class="nav-link" onclick="showSection('galeria')">Galeria</a>
+        </div>
+    </div>
+
+   
+    <section id="inicio" class="section active">
+        <h1>Quem é Poseidon?</h1>
+        <p>Poseidon é uma das figuras mais proeminentes da mitologia grega, sendo o deus dos mares, dos terremotos e dos cavalos. Filho dos titãs Cronos e Réia, ele faz parte dos Doze Olímpicos, os principais deuses do panteão grego. Poseidon é frequentemente retratado como um deus imponente e poderoso, governando sobre as profundezas oceânicas e as tempestades marítimas.</p>
+    </section>
+
+  
+    <section id="listas" class="section">
+        <h2>Top 5 Músicas que Poseidon Ouviria</h2>
+        <ul>
+            <li>"Ode to Joy" de Beethoven</li>
+            <li>"The Ocean" de Led Zeppelin</li>
+            <li>"Aqua" de Jean-Michel Jarre</li>
+            <li>"Under the Sea" - A Pequena Sereia</li>
+            <li>"Sea Shanties" Tradicionais</li>
+        </ul>
+
+        <h2>Top 5 Comidas que Poseidon Comeria</h2>
+        <ul>
+            <li>Frutos do Mar</li>
+            <li>Peixes Frescos</li>
+            <li>Algas Marinhas</li>
+            <li>Carne de Cavalo</li>
+            <li>Polvo à Grega</li>
+        </ul>
+    </section>
+
+    
+    <section id="contato" class="section">
+        <h2>Contato</h2>
+        <p>Pedro Henrique - <a href="tel:+5511983189973">11 98318-9973</a></p>
+        <p>Email: <a href="mailto:pedro.mendes@taxflowsolucoes.com.br">pedro.mendes@taxflowsolucoes.com.br</a></p>
+    </section>
+
+    
+    <section id="produtos" class="section">
+        <h2>Perfume Poseidon</h2>
+        <img src="imagens/PERFUME.webp" alt="Perfume Poseidon" class="product-image">
+        <p>Um amadeirado oriental terroso, clássico, com estilo vintage ao fundo. Um perfume que se conecta com o aroma da terra e suas raízes e com um mundo que busca estar mais conectado ao planeta. O perfume traz o tabaco como uma das notas...</p>
+        <h3>R$ 106,56</h3>
+    </section>
+
+    
+    <section id="galeria" class="section">
+        <h2>Galeria</h2>
+        <div class="gallery">
+            <img src="imagens/images.jpeg" alt="Imagem 1" class="gallery-img">
+            <img src="imagens/poseidon.jpg" alt="Imagem 2" class="gallery-img">
+            <img src="imagens/POSEIDON 2.jpg" alt="Imagem 3" class="gallery-img">
+            <img src="imagens/POSEIDON 3.jpeg" alt="Imagem 4" class="gallery-img">
+            <img src="imagens/POSEIDON 5.jpg" alt="Imagem 5" class="gallery-img">
+            <img src="imagens/POSEIDON 6.jpeg" alt="Imagem 6" class="gallery-img">
+            <img src="imagens/POSEIDON 7.jpg" alt="Imagem 7" class="gallery-img">
+            <img src="imagens/POSEIDON 8.jpg" alt="Imagem 8" class="gallery-img">
+        </div>
+    </section>
+
+   
+    <footer>
+        <p>Email: pedro.mendes@taxflowsolucoes.com.br</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
+
